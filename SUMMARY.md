@@ -17,6 +17,8 @@
 
 ## Extending Manga+Press
 
+Comic Bookmarking
+
 * Manga+Press Templates
   * Single Comic \(single-comic.php\)
   * Latest Comic \(latest-comic.php\)
