@@ -1,20 +1,22 @@
 ## Overview
 
-Manga+Press comes with its own child-themes based off the WordPress themes TwentyEleven through TwentyFourteen. These themes live in the`mangapress\themes`directory \(under`plugins`\). The templates that Manga+Press uses can be found under`/comics`subdirectory of each child-theme. Manga+Press can also make use of the basic WordPress templates if the Manga+Press templates aren't available in the selected theme.
+By default, Manga+Press uses its own templates for the Latest Comic Page, Comic Archive Page, and Comic Post. These templates are called: `single-comic.php`, `latest-comic.php`, `comic-archive-list.php`, `comic-archive-gallery.php`, `comic-archive-calendar.php` and can be found found under`mangapress\templates`. Inside this directory is a sub-directory called`content`. This is specifically for the Latest Comic page and Comic Archive page, which works by filtering the page's content and replacing it with the generated content from these two templates.
 
-By default, Manga+Press uses its own templates for the Latest Comic Page, Comic Archive Page, and Comic Post. The Manga+Press default templates can be found under`mangapress\templates`. Inside this directory is a sub-directory called`content`. This is specifically for the Latest Comic page and Comic Archive page, which works by filtering the page's content and replacing it with the generated content from these two templates.
+These templates are also overridable by the theme, which can be used to customize Manga+Press' output. These templates are: `single-comic.php`, `latest-comic.php`, `comic-archive-list.php`, `comic-archive-gallery.php`, `comic-archive-calendar.php`. With the exception of single-comic.php, these templates need to placed inside the `comics` sub-directory of your child-theme.
 
-## Customizing a Third-Party Theme
+### Social Media Integration
 
-This example uses [Customizr](http://themesandco.com/customizr), one of the popular free themes available on WordPress.org. The example child-theme used can be downloaded \[[here](http://www.manga-press.com/uploads/2014/11/mp-customizr.tar.gz)\]
+For social media integration, see Configuring Manga+Press. There are two templates related to this feature that can be overridden by the theme:` opengraph-tags.php` and `twittercards.php`. Like the templates listed above, these templates need to be placed inside the `comics` sub-directory of your child-theme.
 
-1. In Manga+Press options, check that the "Use Theme Template" option is enabled.
+## Tutorial: Customizing a Third-Party Theme
 
-2. We start by creating a child-theme — in this case, we're using Customizr. We'll call the new theme's directory`mp-customizr`
+This example uses [Customizr](http://themesandco.com/customizr), one of the popular free themes available on WordPress.org. The example child-theme used can be downloaded \[[here](http://www.manga-press.com/uploads/2014/11/mp-customizr.tar.gz)\].
 
-3. Create a`style.css`file inside the`mp-customizr`directory.
+1. We start by creating a child-theme — in this case, we're using Customizr. We'll call the new theme's directory`mp-customizr`
 
-4. At the top of the`style.css`file, add the following theme header:
+2. Create a`style.css`file inside the`mp-customizr`directory.
+
+3. At the top of the`style.css`file, add the following theme header:
 
 ```css
 /*
@@ -71,11 +73,11 @@ Finally, if the navigation is showing up but is displaying incorrectly, then you
     clear: both;
     float: none;
 }
- 
+
 .comic-nav-hlist {
     list-style: none;
 }
- 
+
 .comic-nav-hlist > li {
     float: left;
     margin-right: 10px;
