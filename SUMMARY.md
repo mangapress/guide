@@ -17,6 +17,8 @@
 
 ## Extending Manga+Press
 
+### Manga+Press Templates
+
 * Single Comic \(single-comic.php\)
 * Latest Comic \(latest-comic.php\)
 * Comic Archive Calendar \(comic-archive-calendar.php\)
