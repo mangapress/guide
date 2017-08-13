@@ -17,7 +17,9 @@
 
 ## Extending Manga+Press
 
-Comic Bookmarking
+Comic Bookmarking Feature
+
+Lightbox
 
 * Manga+Press Templates
   * Single Comic \(single-comic.php\)
