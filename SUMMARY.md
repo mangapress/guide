@@ -15,3 +15,14 @@
 * [Theme Customization](getting-started/theme-customization.md)
 * [Using Manga+Press](getting-started/using-manga+press.md)
 
+## Extending Manga+Press
+
+* Manga+Press templates
+  * Single Comic \(single-comic.php\)
+  * Latest Comic \(latest-comic.php\)
+  * Comic Archive Calendar \(comic-archive-calendar.php\)
+  * Comic Archive List \(comic-archive-list.php\)
+  * Comic Archive Gallery \(comic-archive-gallery.php\)
+
+
+
