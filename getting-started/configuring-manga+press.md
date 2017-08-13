@@ -22,19 +22,41 @@ When "Group Comics" is enabled, then comics are grouped according to their mutua
 
 This option only works when the "Group Comics" option is selected. It works similar to "Group Comics" but the comics are grouped according to their top-most parent category. In this example, Comics A, B, C, and D are assigned to **Issue \#2.1**, which has a parent called **Series \#2**, while the next group: Comics E, F, G, and I are assigned to **Issue \#3.1**, which has a parent called **Series \#3**. Navigation will exist between the comics assigned to **Series \#2**, and to the comics assigned to **Series \#3 **but navigation will not exist between Comic D \(Series \#2\) and Comic E \(Series \#3\).
 
-#### Archive Page Style \(Manga+Press 3.0\)
+#### Archive Page Style
 
 Manga+Press 3.0 adds a new option for changing the appearance of the Archive Page. You now have three options: List \(default\), Calendar, and Gallery. Calendar displays a standard monthly calendar similar to the post calendar provided by WordPress. Gallery will show all comics in a grid layout using that post's thumbnail.
 
-#### Archive Page Sorting Order Options \(Manga+Press 3.0\)
+#### Archive Page Sorting Order Options
 
 Manga+Press 3.0 adds new options for changing the sorting order on the Archive Page. These options are the same basic parameters used by `order` and `orderby` in the [`WP_Query` object](https://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters). The drop-downs don't include the advanced sorting options available for WP\_Query \(for example: sorting by meta-data, comment-count, etc\).
 
-### Custom Comic Page image sizes
+### Comic Page
 
-This setting is intended to control the size of the image displayed. Manga+Press uses the WordPress thumbnail system to create image sizes based on values entered by the user. This is the image-size used on the Latest Comic page. This image can also be loaded in your template using`<?php the_post_thumbnail('comic-page'); ?>`
+#### Enable Lightbox
+
+Manga+Press comes with a simple light-box to allow users to expand the images. This option is disabled by default to prevent conflicts with themes that already have a built-in light-box, or other light-box plugins.
+
+#### Generate Comic Page, Comic Page Width, and Comic Page Height
+
+These settings are intended to control the size of the image displayed. Manga+Press uses the WordPress thumbnail system to create image sizes based on values entered by the user. This is the image-size used on the Latest Comic page. This image can also be loaded in your template using`<?php the_post_thumbnail('comic-page'); ?>`
+
+#### Enable Open Graph \(OG\) Tags
+
+This option enables the loading of the Open Graph tags template inside the page header. This template can be overridden by your chosen theme.
+
+#### Enable Twitter Cards
+
+This option enables the loading of the Twitter Cards tags template inside the page header. This template can be overridden by your chosen theme.
+
+#### Twitter Username
+
+When Twitter Cards are enabled, this option is used to associate the card with a Twitter username.
 
 ### Navigation
+
+#### Add Random Link
+
+When this option is enabled, it adds a "Random" link to the comic navigation, which links to a randomly specified comic page.
 
 #### Navigation CSS
 
