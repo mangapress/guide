@@ -17,6 +17,6 @@
 
 ## New Features in Manga+Press 4.0
 
-* Comic Bookmarking Feature
+* [Comic Bookmarking Feature](new-features-in-manga+press-40/comic-bookmarking-feature.md)
 * Lightbox Feature
 

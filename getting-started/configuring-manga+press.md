@@ -40,15 +40,19 @@ Manga+Press comes with a simple light-box to allow users to expand the images. T
 
 These settings are intended to control the size of the image displayed. Manga+Press uses the WordPress thumbnail system to create image sizes based on values entered by the user. This is the image-size used on the Latest Comic page. This image can also be loaded in your template using`<?php the_post_thumbnail('comic-page'); ?>`
 
-#### Enable Open Graph \(OG\) Tags
+#### Social Media Integration
+
+These options allow users to customize tags related to social media sharing. However, they do not provide sharing buttons as this is not the focus of Manga+Press.
+
+##### Enable Open Graph \(OG\) Tags
 
 This option enables the loading of the Open Graph tags template inside the page header. This template can be overridden by your chosen theme.
 
-#### Enable Twitter Cards
+##### Enable Twitter Cards
 
 This option enables the loading of the Twitter Cards tags template inside the page header. This template can be overridden by your chosen theme.
 
-#### Twitter Username
+##### Twitter Username
 
 When Twitter Cards are enabled, this option is used to associate the card with a Twitter username.
 
