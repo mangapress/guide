@@ -79,6 +79,3 @@ Finally, if the navigation is showing up but is displaying incorrectly, then you
     margin-right: 10px;
 }
 ```
-
-
-
